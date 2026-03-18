@@ -28,7 +28,7 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section className="relative w-full bg-white py-16 overflow-hidden">
+    <section className="relative w-full bg-white py-8 md:py-16 overflow-hidden">
       {/* Decorative wavy lines — right side */}
       <div
         className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none"
@@ -45,10 +45,10 @@ export default function Destinations() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section header */}
         <div className="text-center mb-10">
-          <p className="text-sm font-semibold text-[#E8604C] tracking-wide mb-2">
+          <p className="text-sm font-semibol tracking-wide mb-2">
             Top Selling
           </p>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#14213d] leading-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#14213d] leading-tight font-volkhov">
             Top Destinations
           </h2>
         </div>

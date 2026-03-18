@@ -1,20 +1,17 @@
-import { Poppins, Volkhov } from "next/font/google";
+import { volkhov, poppins } from "@/lib/fonts";
 import "./globals.css";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-});
-
-const volkhov = Volkhov({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+export const metadata = {
+  title: "Jadoo",
+  description: "Book your trip in minute, get full control for much longer.",
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>{children}</body>
+    <html lang="en" className={`${volkhov.variable} ${poppins.variable}`}>
+      <body className="font-poppins antialiased">
+        {children}
+      </body>
     </html>
   );
 }

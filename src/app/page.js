@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <main className="relative overflow-hidden">
-        {/* BACKGROUND VECTOR */}
         <Image
           src="/assets/Decore.webp"
           alt="background shape"
@@ -20,15 +19,33 @@ export default function Home() {
           height={800}
           className="absolute top-0 right-0 z-0 w-[50%] max-w-none"
         />
-        {/* CONTENT */}
+
+        {/* MAIN LAYOUT */}
         <div className="relative z-10">
           <Navbar />
-          <Hero />
-          <Services />
-          <Destinations />
-          <BookTrip />
-          <Testimonials />
+
+          <section id="hero">
+            <Hero />
+          </section>
+
+          <section id="flights">
+            <Services />
+          </section>
+
+          <section id="destinations">
+            <Destinations />
+          </section>
+
+          <section id="bookings">
+            <BookTrip />
+          </section>
+
+          <section id="hotels">
+            <Testimonials />
+          </section>
+
           <BrandsSubscribeSection />
+
           <Footer />
         </div>
       </main>

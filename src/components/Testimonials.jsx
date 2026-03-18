@@ -20,7 +20,7 @@ export default function Testimonials() {
       name: "Sara Lee",
       location: "New York, USA",
       text: "A wonderful experience from start to finish. Will definitely book again.",
-      img: "/assets/testimonials/Image2.webp",
+      img: "/assets/testimonials/Image.webp",
     },
   ];
 
@@ -43,13 +43,13 @@ export default function Testimonials() {
     setIndex((prev) => (prev + 1) % testimonials.length);
   };
   return (
-    <section className="px-6 md:px-16 py-24">
+    <section className="px-6 md:px-16 py-10 md:py-24 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row gap-16 items-center">
         {/* LEFT */}
         <div className="flex-1">
-          <p className="text-sm text-gray-400 mb-2">TESTIMONIALS</p>
+          <p className="text-sm text-gray-400 mb-2 font-volkhov">TESTIMONIALS</p>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-10">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-10 font-volkhov">
             What People Say <br /> About Us.
           </h2>
 
