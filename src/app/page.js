@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import BookTrip from "@/sections/BookTrip";
 import BrandsSubscribeSection from "@/sections/BrandsSubscribeSection";
+import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 import Image from "next/image";
 
@@ -28,6 +29,7 @@ export default function Home() {
           <BookTrip />
           <Testimonials />
           <BrandsSubscribeSection />
+          <Footer />
         </div>
       </main>
     </>
