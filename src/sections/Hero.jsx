@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative px-6 md:px-16 py-10 md:py-20 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-0">
-
       {/*LEFT*/}
       <div className="flex-1 text-center md:text-left">
         <p className="text-orange-500 font-semibold mb-4 text-sm tracking-wide font-volkhov">
@@ -14,7 +13,14 @@ export default function Hero() {
           Travel,{" "}
           <span className="relative inline-block">
             enjoy
-            <span className="absolute left-0 bottom-1 w-full h-2 bg-yellow-400 -z-10 rounded-sm" />
+            <Image
+              src="/assets/Decore.png"
+              alt=""
+              width={350}
+              height={30}
+              className="absolute left-0 bottom-4 -z-10 max-w-64 h-auto"
+              aria-hidden="true"
+            />
           </span>
           <br />
           and live a new
